@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: ru.netology.bonus.BonusServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.11 s <<< FAILURE! - in ru.netology.bonus.BonusServiceTest
+shouldCalculate{String, long, boolean, long}  Time elapsed: 0.11 s  <<< ERROR!
+org.junit.platform.commons.util.PreconditionViolationException: Classpath resource [/data.csv] does not exist
+
