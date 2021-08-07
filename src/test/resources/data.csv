@@ -1,0 +1,4 @@
+Registered Under Limit,100060,true,30
+Registered Over Limit,100000060,true,500
+Unregistered Under Limit,100060,false,10
+Unregistered Over Limit,100000060,false,500

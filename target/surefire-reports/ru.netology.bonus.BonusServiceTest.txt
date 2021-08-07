@@ -1,7 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: ru.netology.bonus.BonusServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.11 s <<< FAILURE! - in ru.netology.bonus.BonusServiceTest
-shouldCalculate{String, long, boolean, long}  Time elapsed: 0.11 s  <<< ERROR!
-org.junit.platform.commons.util.PreconditionViolationException: Classpath resource [/data.csv] does not exist
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.203 s <<< FAILURE! - in ru.netology.bonus.BonusServiceTest
+shouldCalculate{String, long, boolean, long}[1]  Time elapsed: 0.078 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 1: Failed to convert String "bonus under limit'" to type java.lang.Long
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: Failed to convert String "bonus under limit'" to type java.lang.Long
+Caused by: java.lang.NumberFormatException: For input string: "bonus under limit'"
+
+shouldCalculate{String, long, boolean, long}[2]  Time elapsed: 0 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 1: Failed to convert String "bonus over limit'" to type java.lang.Long
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: Failed to convert String "bonus over limit'" to type java.lang.Long
+Caused by: java.lang.NumberFormatException: For input string: "bonus over limit'"
+
+shouldCalculate{String, long, boolean, long}[3]  Time elapsed: 0 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 1: Failed to convert String "bonus under limit'" to type java.lang.Long
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: Failed to convert String "bonus under limit'" to type java.lang.Long
+Caused by: java.lang.NumberFormatException: For input string: "bonus under limit'"
+
+shouldCalculate{String, long, boolean, long}[4]  Time elapsed: 0 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Error converting parameter at index 1: Failed to convert String "bonus over limit'" to type java.lang.Long
+Caused by: org.junit.jupiter.params.converter.ArgumentConversionException: Failed to convert String "bonus over limit'" to type java.lang.Long
+Caused by: java.lang.NumberFormatException: For input string: "bonus over limit'"
 
