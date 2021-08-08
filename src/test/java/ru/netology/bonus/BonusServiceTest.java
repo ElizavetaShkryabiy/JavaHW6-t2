@@ -9,24 +9,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BonusServiceTest {
     @ParameterizedTest
     @CsvFileSource(resources = "/data.csv")
-    void shouldCalculateForRegisteredUnderLimit(String test, long amount, boolean registered, long expected) {
+    void shouldCalculate(String test, long amount, boolean registered, long expected) {
         BonusService service = new BonusService();
         long actual = service.calculate(amount, registered);
         assertEquals(expected, actual);
     }
-    void shouldCalculateForRegisteredOverLimit(String test,long amount, boolean registered, long expected) {
-        BonusService service = new BonusService();
-        long actual = service.calculate(amount, registered);
-        assertEquals(expected, actual);
-    }
-    void shouldCalculateForUnregisteredUnderLimit(String test,long amount, boolean registered, long expected) {
-        BonusService service = new BonusService();
-        long actual = service.calculate(amount, registered);
-        assertEquals(expected, actual);
-    }
-    void shouldCalculateForUnregisteredOverLimit(String test,long amount, boolean registered, long expected) {
-        BonusService service = new BonusService();
-        long actual = service.calculate(amount, registered);
-        assertEquals(expected, actual);
-    }
+
 }
